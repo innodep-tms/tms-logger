@@ -22,9 +22,9 @@ type lumberjackSink struct {
 	*lumberjack.Logger
 }
 
-// SkipDefaultZapStdoutSink : if true, skip default console output
-// SkipDefaultZapLumberjackSink : if true, skip default lumberjack logger
-// SkipDefaultNtmsLogServiceSink : if true, skip ntms-log-service use
+// UseZapStdoutSink : if true, use console output
+// UseZapLumberjackSink : if true, use lumberjack logger
+// UseNtmsLogServiceSink : if true, use ntms-log-service
 // LogLevel : log level (DEBUG, INFO, WARN, ERROR, DPANIC, PANIC, FATAL)
 // LogPath : log file path
 // LogFileName : log file name
