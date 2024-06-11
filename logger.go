@@ -251,7 +251,7 @@ func PanicHandler(stderr string) {
 		ServiceName: loggerName,
 		LogLevel:    "PANIC"}
 
-	if _, ok := zapCoreMap["stdout"]; ok {
+	if _, ok := zapCoreMap["logClient"]; ok {
 		panicLogMessage := strings.Split(stderr, "\n\n")
 		if len(panicLogMessage) == 2 {
 			panicLog.Message = panicLogMessage[0]
